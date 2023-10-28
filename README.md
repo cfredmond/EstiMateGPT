@@ -25,7 +25,7 @@
    - [**Requirement Gathering**](#requirement-gathering): Re-evaluate the core features for the MVP.
    - [**Design Mockup Creation**](#design-mockup-creation): Draft a wireframe of EstiMateGPT's user interface.
    - [**AWS Setup**](#aws-setup): Configure AWS services, including Lambda and API Gateway.
-   - **Technology Stack Decision**: Confirm tools, services, and libraries.
+   - [**Technology Stack Decision**](#technology-stack-decision): Confirm tools, services, and libraries.
 
 ### Day 2: Backend Development with ChatGPT API
 **Total Budget for Day 2: $40**
@@ -174,3 +174,57 @@ Establish the necessary infrastructure on AWS to support the functionalities of 
    - Depending on the requirements, additional AWS services like Amazon S3 (for static website hosting) or Amazon RDS (for database needs) might be initialized and configured.
 
 [Back to top](#)
+
+---
+
+### Technology Stack Decision
+
+### Backend:
+
+1. **Serverless Computing**: 
+   - **Choice**: AWS Lambda
+   - **Reason**: Continues to be an excellent choice for serverless architecture. You can write your Lambda functions in Python.
+   
+2. **API Management**:
+   - **Choice**: Amazon API Gateway
+   - **Reason**: Consistent and secure way to expose the Python-based Lambda functions to the frontend.
+
+3. **Integration with GPT-4**:
+   - **Choice**: OpenAI's official Python SDK
+   - **Reason**: This SDK can be integrated directly into the Python codebase you deploy on Lambda.
+
+### Frontend:
+
+1. **Web Framework**:
+   - **Choice**: Vue.js
+   - **Reason**: Vue.js is a progressive JavaScript framework that is easy to integrate and offers a clear separation of components. It has a gentle learning curve and robust community support.
+
+2. **Styling and Components**:
+   - **Choice**: BootstrapVue
+   - **Reason**: BootstrapVue combines Bootstrap (a popular CSS framework) and Vue.js, allowing for the creation of responsive and attractive user interfaces with pre-styled components.
+
+### Database (if required later):
+
+1. **Database Service**:
+   - **Choice**: Amazon DynamoDB
+   - **Reason**: Still remains a good choice due to its serverless nature, scalability, and integration with AWS services. SDKs are available for Python.
+
+### Other Tools & Services:
+
+1. **Version Control**:
+   - **Choice**: Git with GitHub or Bitbucket
+   - **Reason**: Standard tool for source code management and collaboration.
+
+2. **Continuous Integration/Continuous Deployment (CI/CD)**:
+   - **Choice**: AWS CodePipeline or Jenkins with plugins/support for Python and Vue.js.
+   - **Reason**: To automate the build, test, and deployment process, ensuring smooth updates and rapid iterations.
+
+3. **Monitoring & Logging**:
+   - **Choice**: Amazon CloudWatch
+   - **Reason**: To keep an eye on application performance, set alerts, and log data for future analysis.
+
+With Python on the backend, Vue.js for the frontend, and Bootstrap for styling, this updated tech stack provides a solid foundation for **EstiMateGPT**. It aligns with modern best practices and offers scalability and maintainability.
+
+[Back to top](#)
+
+---
