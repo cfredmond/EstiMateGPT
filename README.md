@@ -8,37 +8,13 @@
 
 ### AWS Resources
 
-For the 3-day schedule of the **EstiMateGPT** project, the following AWS resources would be essential:
-
-1. **Amazon Lambda**:
-   - Serverless compute service that lets you run code without provisioning or managing servers.
-   - Used to create the middleware function that communicates with the ChatGPT API and processes the user's requests.
-
-2. **Amazon API Gateway**:
-   - Service to create, publish, maintain, monitor, and secure APIs.
-   - Used to expose a secure endpoint for the frontend to communicate with the AWS Lambda function.
-
-3. **Amazon S3 (Simple Storage Service)**:
-   - (Optional for this schedule but commonly used in real-world scenarios)
-   - Object storage service that offers scalability, data availability, security, and performance.
-   - Could be used to host static frontend assets like HTML, CSS, and JavaScript files if you decide to deploy the MVP to the web.
-
-4. **Amazon CloudWatch**:
-   - Monitoring and observability service.
-   - Useful for monitoring the performance of Lambda functions, logging API calls in API Gateway, and setting alarms for potential issues.
-
-5. **AWS Identity and Access Management (IAM)**:
-   - Service that helps securely control access to AWS resources.
-   - Used to set permissions and roles for the Lambda function, API Gateway, and other resources to ensure they can interact with each other.
-
-6. **AWS Certificate Manager**:
-   - (Optional for this schedule but important for real-world deployments)
-   - Provides SSL/TLS certificates for secure data transfer and to establish a secure connection if you decide to deploy the MVP.
-
-7. **Amazon Route 53**:
-   - (Optional for this schedule but important for real-world deployments)
-   - Scalable Domain Name System (DNS) web service and domain registration.
-   - Could be used if you decide to associate a custom domain name with the MVP.
+- **Amazon Lambda**: Serverless compute service.
+- **Amazon API Gateway**: Service for creating and securing APIs.
+- **Amazon S3 (Simple Storage Service)**: Object storage service (optional for this schedule).
+- **Amazon CloudWatch**: Monitoring and observability service.
+- **AWS Identity and Access Management (IAM)**: Service for access control and permissions.
+- **AWS Certificate Manager**: Provides SSL/TLS certificates (optional for this schedule).
+- **Amazon Route 53**: DNS web service and domain registration (optional for this schedule).
 
 ---
 
