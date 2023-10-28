@@ -30,7 +30,7 @@
 ### Day 2: Backend Development with ChatGPT API
 **Total Budget for Day 2: $40**
    - **Backend Development with ChatGPT API**: Develop an AWS Lambda function to act as middleware, integrated with the ChatGPT API.
-   - **Backend Testing and Debugging**: Test the Lambda function with sample requests.
+   - [**Backend Testing and Debugging**](#backend-testing-and-debugging): Test the Lambda function with sample requests.
 
 ### Day 3: Expanded Frontend Development and Testing
 **Total Budget for Day 3: $30**
@@ -228,3 +228,59 @@ With Python on the backend, Vue.js for the frontend, and Bootstrap for styling, 
 [Back to top](#)
 
 ---
+
+### Backend Testing and Debugging
+
+1. **Valid Input Test**:
+   - **Description**: Test if the Lambda function returns a valid response when provided with a typical user input.
+   - **Input**: `{ "userInput": "Describe the concept of cloud computing." }`
+   - **Expected Output**: A response containing a text description of cloud computing.
+
+2. **Empty Input Test**:
+   - **Description**: Test the Lambda function's behavior when given an empty user input.
+   - **Input**: `{ "userInput": "" }`
+   - **Expected Output**: An error message or a default response from ChatGPT.
+
+3. **Long Input Test**:
+   - **Description**: Test how the Lambda function handles very long user inputs.
+   - **Input**: `{ "userInput": "A" * 2048 }` (2048 characters long)
+   - **Expected Output**: An error message due to exceeding the input length limit, or a truncated input being sent to ChatGPT.
+
+4. **Special Characters Input Test**:
+   - **Description**: Test the Lambda function with inputs containing special characters to ensure it processes them correctly.
+   - **Input**: `{ "userInput": "What is the meaning of @$&*^%#!?" }`
+   - **Expected Output**: A response that correctly interprets or ignores the special characters.
+
+5. **Non-English Input Test**:
+   - **Description**: Test the Lambda function's behavior with non-English user inputs.
+   - **Input**: `{ "userInput": "¿Cómo está?" }`
+   - **Expected Output**: A response in Spanish or an error message if the model isn't trained for Spanish.
+
+6. **API Key Missing/Invalid Test**:
+   - **Description**: Test how the Lambda function behaves if the OpenAI API key is missing or invalid.
+   - **Input**: `{ "userInput": "Tell me about quantum physics." }` (with a missing or wrong API key)
+   - **Expected Output**: An error message indicating authentication failure.
+
+7. **API Endpoint Unreachable Test**:
+   - **Description**: Test the Lambda function's behavior when the ChatGPT API endpoint is not reachable.
+   - **Input**: `{ "userInput": "Describe blockchain." }` (simulate an unreachable API endpoint)
+   - **Expected Output**: An error message indicating network or API unavailability.
+
+8. **Response Truncation Test**:
+   - **Description**: Test if the Lambda function correctly handles and truncates very long responses from ChatGPT.
+   - **Input**: `{ "userInput": "List all numbers from 1 to 1000." }`
+   - **Expected Output**: A truncated response if the generated text exceeds the Lambda's output limit.
+
+9. **Invalid JSON Test**:
+   - **Description**: Test the Lambda function's behavior with malformed JSON input.
+   - **Input**: `"{ userInput: Describe the water cycle. }"`
+   - **Expected Output**: An error message indicating invalid input format.
+
+10. **Unsupported Input Format Test**:
+   - **Description**: Test how the Lambda function responds to unsupported input formats.
+   - **Input**: `[ "Describe the water cycle." ]` (input as an array instead of an object)
+   - **Expected Output**: An error message indicating the wrong input format.
+
+These test cases cover various functional aspects of the Lambda function and help ensure it operates reliably across different scenarios. It's essential to run these tests in a controlled environment to avoid incurring unnecessary charges or hitting API rate limits.
+
+[Back to top](#)
