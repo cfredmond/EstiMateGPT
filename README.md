@@ -21,24 +21,21 @@
 ### 3-Day Development Schedule
 
 ### Day 1: Planning, Design, and AWS Setup
-**Total Budget for Day 1: $30**
    - [**Requirement Gathering**](#requirement-gathering): Re-evaluate the core features for the MVP.
    - [**Design Mockup Creation**](#design-mockup-creation): Draft a wireframe of EstiMateGPT's user interface.
    - [**AWS Setup**](#aws-setup): Configure AWS services, including Lambda and API Gateway.
    - [**Technology Stack Decision**](#technology-stack-decision): Confirm tools, services, and libraries.
 
 ### Day 2: Backend Development with ChatGPT API
-**Total Budget for Day 2: $40**
    - **Backend Development with ChatGPT API**: Develop an AWS Lambda function to act as middleware, integrated with the ChatGPT API.
    - [**Backend Testing and Debugging**](#backend-testing-and-debugging): Test the Lambda function with sample requests.
 
 ### Day 3: Expanded Frontend Development and Testing
-**Total Budget for Day 3: $30**
    - **Frontend Development**:
      - **Design and Layout**: Craft EstiMateGPT's layout with HTML/CSS.
      - **Integration with Backend**: Use JavaScript for backend communication.
      - **User Feedback and Interaction**: Enhance user experience with feedback mechanisms.
-   - **Testing and Debugging**: Ensure the frontend and backend work seamlessly.
+   - [**Frontend Testing and Debugging**](#frontend-testing-and-debugging): Ensure the frontend and backend work seamlessly.
 
 ---
 
@@ -282,5 +279,68 @@ With Python on the backend, Vue.js for the frontend, and Bootstrap for styling, 
    - **Expected Output**: An error message indicating the wrong input format.
 
 These test cases cover various functional aspects of the Lambda function and help ensure it operates reliably across different scenarios. It's essential to run these tests in a controlled environment to avoid incurring unnecessary charges or hitting API rate limits.
+
+[Back to top](#)
+
+---
+
+### Frontend Testing and Debugging
+
+1. **Input Field Validation Test**:
+   - **Description**: Test if the input fields on the frontend validate and highlight incorrect or missing inputs.
+   - **Action**: Leave an essential field, such as "Domain", empty and attempt to submit.
+   - **Expected Outcome**: The system should highlight the missing field and display an error message.
+
+2. **Response Display Test**:
+   - **Description**: Check if the system correctly displays the response from the backend.
+   - **Action**: Provide a valid input and submit.
+   - **Expected Outcome**: The system should display a response in the dedicated results area.
+
+3. **Loading Indicator Test**:
+   - **Description**: Verify that a loading indicator appears when the system is fetching a response.
+   - **Action**: Input a query and click submit.
+   - **Expected Outcome**: A loading icon or message should be visible while waiting for a response, and it should disappear once the result is displayed.
+
+4. **Error Message Display Test**:
+   - **Description**: Test if the system correctly displays error messages for backend failures.
+   - **Action**: Simulate a backend failure, like turning off the backend service, and then submit a query.
+   - **Expected Outcome**: An error message should be displayed to the user.
+
+5. **Responsive Design Test**:
+   - **Description**: Ensure the tool's UI adapts to different screen sizes.
+   - **Action**: Access the tool on devices with different screen sizes (e.g., mobile, tablet, desktop).
+   - **Expected Outcome**: The UI should adjust and remain user-friendly on all devices.
+
+6. **Browser Compatibility Test**:
+   - **Description**: Verify that the tool works consistently across different web browsers.
+   - **Action**: Access the tool using various browsers like Chrome, Firefox, Safari, and Edge.
+   - **Expected Outcome**: The tool's functionality and appearance should be consistent across all tested browsers.
+
+7. **Tooltip and Help Information Test**:
+   - **Description**: Check if tooltips or help icons provide additional information when hovered over.
+   - **Action**: Hover over any tooltip or help icons present on the tool.
+   - **Expected Outcome**: Descriptive information should appear, guiding the user about the particular field or feature.
+
+8. **Feature Selection Test**:
+   - **Description**: Verify that users can select multiple features from the checklist.
+   - **Action**: Select multiple items from the "Desired Features" checklist.
+   - **Expected Outcome**: All selected items should be highlighted or checked.
+
+9. **Feedback or Contact Form Test**:
+   - **Description**: Ensure that the feedback or contact form can be filled and submitted.
+   - **Action**: Fill in the feedback or contact form and hit submit.
+   - **Expected Outcome**: A confirmation message should appear, indicating the successful submission of feedback.
+
+10. **Navigation Test**:
+   - **Description**: Verify that navigation links or buttons lead to the correct sections or pages.
+   - **Action**: Click on various navigation links like 'About', 'Help', or 'Contact'.
+   - **Expected Outcome**: The tool should navigate to the corresponding section or page smoothly.
+
+11. **Input Data Persistence Test**:
+   - **Description**: Ensure that user input persists if the user navigates away and then returns to the main form.
+   - **Action**: Input data into the form, navigate to another section, and then return to the form.
+   - **Expected Outcome**: Previously entered data should still be present in the form fields.
+
+These test cases will help ensure that the frontend of **EstiMateGPT** provides a smooth and reliable user experience. It's also essential to monitor real-world user interactions and feedback to catch any issues not covered by these test cases.
 
 [Back to top](#)
