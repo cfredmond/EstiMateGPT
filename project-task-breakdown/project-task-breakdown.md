@@ -7,8 +7,8 @@
    - Identify stakeholders and determine communication channels.
 
 2. **UI/UX Design**:
-   - Sketch initial wireframes for the user interface.
-   - Design high-fidelity UI mockups with detailed interactions.
+   - Sketch [initial wireframes](day-1/wireframe-outline.md) for the user interface.
+   - Design high-fidelity UI mockups with [detailed interactions](day-1/detailed-interactions.md).
    - Validate designs with stakeholders or potential users.
 
 3. **Database Design** (if applicable):
