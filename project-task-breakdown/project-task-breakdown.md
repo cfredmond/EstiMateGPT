@@ -19,7 +19,7 @@
    - Define required [API endpoints](day-1/api-endpoints.md), request-response structures.
    - Plan for error handling and response status codes.
 
-5. **AWS Setup**:
+5. **[AWS Setup](day-1/aws-setup.md)**:
    - ~~Set up an AWS account and ensure proper permissions.~~ Done
    - ~~Initialize and configure AWS Lambda for backend logic.~~ Done
    - ~~Set up Amazon API Gateway for API endpoints.~~ Done
