@@ -1,13 +1,9 @@
-Certainly! Breaking down the **EstiMateGPT** project into tasks will provide a clear roadmap for development and ensure systematic progress. Here's a detailed breakdown:
-
----
-
 ### **EstiMateGPT** Project Task Breakdown:
 
 #### **Day 1: Planning, Design, and AWS Setup**
 
 1. **Project Initialization**:
-   - Define project [objectives and deliverables](objectives-and-deliverables.md).
+   - Define project [objectives and deliverables](day-1/objectives-and-deliverables.md).
    - Identify stakeholders and determine communication channels.
 
 2. **UI/UX Design**:

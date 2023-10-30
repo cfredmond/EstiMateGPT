@@ -1,5 +1,3 @@
-### Persona
-
 #### What would you like ChatGPT to know about you to provide better responses?
 
 * **Professional/Role**: GPT-4 Consultant
