@@ -7,7 +7,7 @@ Certainly! Breaking down the **EstiMateGPT** project into tasks will provide a c
 #### **Day 1: Planning, Design, and AWS Setup**
 
 1. **Project Initialization**:
-   - Define project objectives and deliverables.
+   - Define project [objectives and deliverables](objectives-and-deliverables.md).
    - Identify stakeholders and determine communication channels.
 
 2. **UI/UX Design**:
