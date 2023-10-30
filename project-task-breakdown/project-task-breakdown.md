@@ -12,20 +12,20 @@
    - Validate designs with stakeholders or potential users.
 
 3. **Database Design** (if applicable):
-   - Identify data entities and their relationships.
-   - Design the database schema and data flow diagrams.
+   - Identify [data entities and their relationships](day-1/data-entities-and-relationships.md).
+   - Design the [database schema and data flow diagrams](day-1/database-schema-and-data-flow-diagrams.md).
 
 4. **Backend & API Design**:
-   - Define required API endpoints, request-response structures.
+   - Define required [API endpoints](day-1/api-endpoints.md), request-response structures.
    - Plan for error handling and response status codes.
 
 5. **AWS Setup**:
-   - Set up an AWS account and ensure proper permissions.
-   - Initialize and configure AWS Lambda for backend logic.
-   - Set up Amazon API Gateway for API endpoints.
-   - Configure Amazon RDS or DynamoDB for database needs (if applicable).
-   - Initialize Amazon Amplify for web hosting.
-   - Establish monitoring via Amazon CloudWatch.
+   - ~~Set up an AWS account and ensure proper permissions.~~ Done
+   - ~~Initialize and configure AWS Lambda for backend logic.~~ Done
+   - ~~Set up Amazon API Gateway for API endpoints.~~ Done
+   - ~~Configure Amazon RDS or DynamoDB for database needs (if applicable).~~ Skipped
+   - ~~Initialize Amazon Amplify for web hosting.~~ Done
+   - ~~Establish monitoring via Amazon CloudWatch.~~ Happening during backend and frontend development 
 
 #### **Day 2: Backend Development with ChatGPT API**
 
